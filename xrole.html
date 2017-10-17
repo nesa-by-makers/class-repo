@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title> SHCI </title>
+		<link rel = "shortcut icon" type = "image/jpg" href= "img/logo1.jpg">
+		
+		<style>
+		
+		 body {
+			background:#071e24; color:#fff;
+		 }
+		 h1 { font-size: 40px;
+				text-align: center;
+			
+		 
+		 }
+		 
+		
+		 
+		 header {
+			background: #209db9;
+			font-family: algerian;
+					
+			}
+		 header img {float: left; 
+									
+			 		}
+					
+		header #headnav {
+							text-align: right;
+							padding: 0 50px 0 0;
+
+						}
+		 
+		 #countainer {	
+						margin-top: 0px;
+											
+		 }
+		 .frm1 {
+				margin-top: 40px;
+			}
+		 
+		</style>
+						
+					
+						
+						
+		<script>
+			function validateInput()
+			{
+				var validationSummary=document.getElementById("validationSummary");
+				var Firstname=document.getElementById('name');
+				var lastname=document.getElementById('lastname');
+				{
+				validationSummary.innerHTML="";
+				}
+				if (Firstname.value.length < 2)	
+
+				{
+				validationSummary.innerHTML=
+				validationSummary.innerHTML+"Firstname must be at least two characters! <br />"
+				}
+				
+			
+				if (lastname.value.length < 2)
+				{
+				validationSummary.innerHTML=
+				validationSummary.innerHTML+"lastname must be at least two characters!"; 
+				}
+								
+			}	
+		
+		</script>
+		</head>
+	
+	<body>
+		
+		<header> 
+		
+			
+			<img src="img/logo1.jpg" width ="128" height:"100" >
+			<h1>SKY HIGH CODING INSTITUTE </h1>
+			
+				<div id= "headnav"><a href="#">Back</a> | <a href="#">Home</a> | <a href="#">ABOUT US</a> | <a href="#">OUR PROGRAMME</a></div>
+			      
+		</header>
+		
+		
+		<div id = "countainer" align ="center">	
+	
+		<p id="validationSummary"></p>
+		<form class = "frm1">
+			First Name
+		 <input type="text" name="Firstname" id="name" required  minlength="2"/>
+			
+			  Last Name 
+		 <input type="text" name="lastname"  id="lastname" required /><br><br>
+			
+			Phone Num
+			<input type="number" name ="phone number" required placeholder="type in your phone number" />
+			
+			Address
+			<input type="text" id="Address"><br><br>
+	
+			Nationality
+			<select name="Nationality">
+			<option value="America">America</option>
+			<option value="London">London</option>
+			<option value="Nigeria">Nigeria</option>
+			<option value="Ghana">Ghana</option>
+			<option value="France">France</option>
+			<option value="Malasia">Malasia</option>
+			<option value="Arab">Arab</option>
+			<option value="Honkong">Honkong</option>
+			<option value="China">China</option>
+			<option value="Dubai">Dubai</option>
+			<option value="Paris">Paris</option>
+		</select> 
+			Occupation
+			<input type="radio" name="occupation" value="Trader" checked>trader
+			<input type="radio" name="occupation" value="Student"> student
+			<input type="radio" name="occupation" value="Civil servant"> civil servant <br><br>
+			
+			Age
+			<input type="number" name ="age" required placeholder="type in your age" /><br><br>
+			Email
+		 <input type="email" name="email" placeholder ="type in your mail" required /><br><br>
+		 Gender
+		<input type="radio" name="gender" value="male" checked> Male
+		<input type="radio" name="gender" value="female"> Female<br><br>
+		
+		Subjects
+		 <select name="subjects">
+			<option value="maths">Maths</option>
+			<option value="english">English</option>
+			<option value="chemmistry">Chemistry</option>
+			<option value="biology">Biology</option>
+		</select> <br><br>
+	
+	Your Experience<br>
+		<textarea name="message" rows="4" cols="50">
+			.
+		 </textarea> <br>
+ 			
+			
+			 <input type="button" value="SUBMIT" onclick="validateInput()" />
+		</form>
+		
+		</div>	
+	</body>
+</html>
+			
+		
